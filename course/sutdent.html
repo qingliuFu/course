@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>学生</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/student.css"/>
+    <script src="javascript/jquery-2.2.2.min.js"></script>
+</head>
+<header>
+    <a class="logo" href="javascript:;">
+        <img class="logo" src="image/logo.png" alt="西安电子科技大学" title="西安电子科技大学"/>
+    </a>
+    <div id="welcomeUser" class="fr">
+        <p></p>
+        <a id="loginOut" href="javascript:;"  style="display: none">注销</a>
+    </div>
+</header>
+<section>
+    <ul class="title">
+        <li><a class="active" href="javascript:;">通知</a></li>
+        <li><a href="javascript:;">选课</a></li>
+        <li><a href="javascript:;">选课结果</a></li>
+        <li><a href="javascript:;">关于</a></li>
+    </ul>
+    <div class="content">
+        <div class="on-show" id="notice" style="display: block">
+            <ul></ul>
+        </div>
+        <div id="course">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>课程名</th>
+                        <th>时间安排</th>
+                        <th>教室</th>
+                        <th>课余量</th>
+                        <th>老师名</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <a id="ensureCourse" href="javascript:;">确定</a>
+        </div>
+        <div id="selectedCourse">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>课程名</th>
+                        <th>时间安排</th>
+                        <th>教室</th>
+                        <th>课余量</th>
+                        <th>老师名</th>
+                        <th>退课</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="4">444444444</div>
+    </div>
+</section>
+<script src="javascript/content.js"></script>
+<script src="javascript/student.js"></script>
+</body>
+</html>

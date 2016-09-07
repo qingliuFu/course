@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #eeeeee;
+    font-family: 黑体, Helvetica, Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear-fix:after,
+.clear-fix:before{
+    display: table;
+    content: '';
+}
+.clear-fix:after{
+    clear: both;
+}
+/*头部区域*/
+header .logo{
+    display: block;
+    height: 90px;
+    background: url("../image/head-bg.gif") repeat-x left top;
+}
+header img{
+    margin-top: 11px;
+    margin-left: 80px;
+}
+/*用户名显示*/
+#welcomeUser{
+    font-size: 18px;
+    color: white;
+    margin-top: -55px;
+    margin-right: 180px;
+    cursor: pointer;
+}
+#welcomeUser p{
+    padding: 2px 4px;
+}
+#welcomeUser p:hover{
+    background-color: #bf2b2e;
+}
+#loginOut{
+    display: block;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 5px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+}
+#loginOut:after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    top: -4px;
+    left: 50%;
+    background-color: white;
+    transform: rotate(45deg);
+}
+#loginOut:hover{
+    color: red;
+}
+/*内容区域*/
+section{
+    width: 95%;
+    min-height: 500px;
+    margin: 10px auto;
+    background-color: white;
+    border: 1px solid #999999;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #666666;
+    overflow: visible;
+    position: relative;
+}
+section .title{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #aaaaaa;
+}
+section .title a{
+    display: block;
+    float: left;
+    width: 100px;
+    text-align: center;
+    border-right: 1px solid #999999;
+    color: white;
+    font-size: 17px;
+}
+section .title a:hover{
+    background-color: #dddddd;
+    color: #333333;
+}
+section .title .active{
+    background-color: #dddddd;
+    color: #333333;
+}
+
+.content>div{
+    display: none;
+}
+footer{
+    height: 70px;
+    width: 100%;
+    background-color: #aaaaaa;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    position: absolute;
+    bottom: 0;
+}
+@media (max-width: 500px) {
+    section{
+        width: 100%;
+        margin-top: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    section .title a{
+        width: 24%;
+        float: left;
+        text-align: center;
+    }
+    body{
+        background-color: white;
+    }
+    header img{
+        margin-top: 11px;
+        margin-left: 0;
+    }
+}
+
+/*表格*/
+table{
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+thead{
+    background-color: #999999;
+    color: white;
+    cursor: pointer;
+}
+th{
+    padding: 8px 18px;
+    text-align: center;
+}
+td{
+    padding: 6px 15px;
+    text-align: center;
+    border: 1px solid #aaaaaa;
+}
+tbody tr:hover{
+    background-color: #eeeeee;
+}
+tbody tr:nth-child(2n){
+    background-color: #cccccc;
+}
+/*通知区的样式*/
+#notice ul{
+    width: 80%;
+    margin: 20px auto;
+}
+#notice li{
+    border-bottom: 1px solid #999999;
+    min-height: 40px;
+}
+#notice p{
+    word-wrap: break-word;
+    display: none;
+    color: #666666;
+    line-height: 25px;
+    text-indent: 30px;
+}
+#notice h3{
+    line-height: 40px;
+    word-wrap: break-word;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: -20px;
+    display: inline-block;
+}
+#notice time{
+    line-height: 40px;
+    display: inline-block;
+    float: right;
+}
+#notice .close,
+#notice .delete{
+    display: inline-block;
+    background-color: #3F89EC;
+    width: 60px;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    height: 0;
+    overflow: hidden;
+    margin-right: 10px;
+}
+#notice .close:hover{
+    background-color: #3c56ec;
+}
+#notice .delete:hover{
+    background-color: red;
+}
+
+/*添加内容的弹出 */
+.popUp{
+      display: none;
+      width: 300px;
+      height: 240px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -150px;
+      margin-top: -100px;
+      background-color: white;
+      border: 1px solid #555555;
+      padding: 15px 25px;
+      opacity: 0.9;
+      box-shadow: 0 0 4px #888888;
+  }
+.popUp label{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    padding-right: 6px;
+    line-height: 30px;
+}
+.popUp input{
+    width: 180px;
+    height: 25px;
+    margin: 8px auto;
+}
+.popUp .submit, .popUp .cancel{
+    display: block;
+    margin: 18px auto;
+}

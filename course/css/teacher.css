@@ -1,0 +1,35 @@
+/*添加课程按钮*/
+#insertCourse{
+    display: block;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: #3F89EC;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#insertCourse:hover{
+    background-color: #3c56ec;
+}
+
+/*学生信息*/
+#studentInfo{
+    width: 90%;
+    margin: 20px auto;
+}
+.choose-class label{
+    font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: red;
+}
+#allClass{
+    width: 200px;
+    height: 30px;
+}
+.choose-class{
+    margin: 0 auto;
+    width: 40%;
+}

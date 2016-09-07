@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>teacher</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/teacher.css">
+    <script src="javascript/jquery-2.2.2.min.js"></script>
+</head>
+<body>
+<header>
+    <a class="logo" href="javascript:;">
+        <img class="logo" src="image/logo.png" alt="西安电子科技大学" title="西安电子科技大学"/>
+    </a>
+    <div id="welcomeUser" class="fr">
+        <p></p>
+        <a id="loginOut" href="javascript:;"  style="display: none">注销</a>
+    </div>
+</header>
+<section>
+    <ul class="title">
+        <li><a class="active" href="javascript:;">通知</a></li>
+        <li><a href="javascript:;">课程</a></li>
+        <li><a href="javascript:;">学生信息</a></li>
+        <li><a href="javascript:;">关于</a></li>
+    </ul>
+    <div class="content">
+        <div class="on-show" id="notice" style="display: block">
+            <ul></ul>
+        </div>
+        <div id="course">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>课程名</th>
+                        <th>时间</th>
+                        <th>地点</th>
+                        <th>课余量</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <a id="insertCourse">添加课程</a>
+            <!--添加新课程-->
+            <div class="popUp" style="height: 280px">
+                <label for="courseName">课程名</label><input type="text" id="courseName" name="courseName" placeholder="请输入课程名"/><br/>
+                <label for="courseTime">时间</label><input type="text" id="courseTime" placeholder="请输入课程时间安排"/><br/>
+                <label for="courseRoom">地点</label><input type="text" id="courseRoom" name="courseRoom" placeholder="请输入上课教室"/><br/>
+                <label for="courseNumber">课程数</label><input type="number" id="courseNumber" placeholder="请输入课程总数">
+                <input class="submit" type="button" value="提交"/>
+                <input class="cancel" type="button" value="撤销"/>
+            </div>
+        </div>
+        <div id="studentInfo">
+            <div class="choose-class">
+                <label for="allClass">按班级查询：</label>
+                <select id="allClass"></select>
+            </div>
+            <div class="info-zone">
+                <h4 id="className"></h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>班级</th>
+                            <th>学号</th>
+                            <th>姓名</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="4">44444444</div>
+    </div>
+</section>
+<script src="javascript/content.js"></script>
+<script src="javascript/teacher.js"></script>
+</body>
+</html>

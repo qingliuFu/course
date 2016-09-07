@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>admin</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+    <script src="javascript/jquery-2.2.2.min.js"></script>
+</head>
+<body>
+<header>
+    <a class="logo" href="javascript:;">
+        <img class="logo" src="image/logo.png" alt="西安电子科技大学" title="西安电子科技大学"/>
+    </a>
+    <div id="welcomeUser" class="fr">
+        <p></p>
+        <a id="loginOut" href="javascript:;"  style="display: none">注销</a>
+    </div>
+</header>
+<section>
+    <ul class="title">
+        <li><a class="active" href="javascript:;">通知</a></li>
+        <li><a href="javascript:;">老师信息</a></li>
+        <li><a href="javascript:;">学生信息</a></li>
+        <li><a href="javascript:;">关于</a></li>
+    </ul>
+    <div class="content">
+        <div class="on-show clear-fix" style="display: block" id="notice">
+            <ul></ul>
+            <a href="javascript:;" class="fr addNewMessage">发布通知</a>
+            <a href="javascript:;" class="fr cancelMessage">取消发布</a>
+            <div class="input-box">
+                <label for="messageTitle">标题</label><input type="text" id="messageTitle" placeholder="请输入通知标题"/><br/>
+                <label for="messageContent">正文</label><textarea id="messageContent" placeholder="输入通知内容"></textarea>
+            </div>
+        </div>
+        <div id="teacher">
+            <table id="teacherInfo" border="1">
+                <thead>
+                        <tr>
+                            <th>教师ID</th>
+                            <th>教师密码</th>
+                            <th>教师名</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                <tbody></tbody>
+            </table>
+            <a id="insertTeacher">添加新老师</a>
+            <!--//添加新老师界面-->
+            <div class="popUp">
+                <label for="teacherID">教师工号</label><input type="text" id="teacherID" name="teacherID" placeholder="输入老师工号"/><br/>
+                <label for="teacherPsd">教师密码</label><input type="text" id="teacherPsd" placeholder="输入教师登录密码"/><br/>
+                <label for="teacherName">教师名</label><input type="text" id="teacherName" name="teacherName" placeholder="输入老师名"/><br/>
+                <input class="submit" type="button" value="提交"/>
+                <input class="cancel" type="button" value="撤销"/>
+            </div>
+        </div>
+        <div id=""></div>
+        <div id="four">444444444</div>
+    </div>
+</section>
+<script src="javascript/content.js"></script>
+<script src="javascript/admin.js"></script>
+</body>
+</html>

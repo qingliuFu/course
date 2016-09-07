@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*添加新老师*/
+#insertTeacher{
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+    background-color: #3F89EC;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#insertTeacher:hover{
+    background-color: #3c56ec;
+}
+#teacher{
+    position: relative;
+}
+
+/*添加新通知按钮,和取消发送的按钮*/
+.addNewMessage, .cancelMessage{
+    display: block;
+    color: white;
+    background-color: #3F89EC;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+}
+.addNewMessage{
+    height: 30px;
+    margin-right: 10%;
+    margin-left: 4px;
+}
+.cancelMessage{
+    height: 0;
+}
+.addNewMessage:hover,
+.cancelMessage:hover{
+    background-color: #3c56ec;
+}
+/*发布新通知的输入框*/
+.input-box{
+    width: 70%;
+    margin: 60px auto 0 auto;
+    display: none;
+}
+#messageTitle{
+    margin-bottom: 40px;
+    height: 30px;
+}
+.input-box input,
+.input-box textarea{
+    width: 70%;
+}
+.input-box textarea{
+    vertical-align: text-top;
+}
+.input-box label{
+    padding-right: 10px;
+}
+#messageContent{
+    min-height: 200px;
+}

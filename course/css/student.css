@@ -1,0 +1,14 @@
+#ensureCourse{
+    display: block;
+    color: white;
+    width: 60px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: #3F89EC;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    line-height: 25px;
+}
+#ensureCourse:hover{
+    background-color: #3c56ec;
+}
